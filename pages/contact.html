@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="../style.css">
+        <script src="../script.js" defer></script>
+    </head>
+    <body>
+        <div class="header">
+            <h3 class="logo">Mark Mizell - Personal Injury Lawyer</h3>
+            <p><a href="about.html">About</a></p>
+            <p><a href="links.html">Links</a></p>
+            <p><a href="blog.html">Blog</a></p>
+            <p><a href="contact.html">Contact</a></p>
+        </div>
+        <div class="content">
+            <div class="form">
+                <h1>Contact Form</h1>
+                <form onsubmit="return false">
+                    <input type="text" placeholder="First Name" id="firstName">
+                    <br><br>
+                    <input type="text" placeholder="Last Name" id="lastName">
+                    <br><br>
+                    <input type="text" placeholder="Phone Number" id="phoneNum">
+                    <br><br>
+                    <input type="email" placeholder="Email Address" id="email">
+                    <br><br>
+                    <span>Message</span>
+                    <br>
+                    <textarea id="message" rows="8"></textarea>
+                    <br><br>
+                    <button onclick="sendContact();">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
