@@ -164,3 +164,9 @@ body {
     color: white;
     font-size: 15px;
 }
+
+.placeholderRed {
+    border-color: red;
+    border-width: 2px;
+    border-style: solid;
+}
