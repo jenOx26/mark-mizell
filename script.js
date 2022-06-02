@@ -47,11 +47,3 @@ class User {
         this.message = message;
     }
 }
-
-function sendContact() {
-    if (isValid()) {
-        alert('Thank you! Your form has been submitted!');
-    } else {
-        alert("Please complete all fields.")
-    }
-}
