@@ -19,18 +19,24 @@
             <div class="form">
                 <h1 id="formTitle">Contact Form</h1>
                 <form action="https://formsubmit.co/jnochsner26@gmail.com" method="POST">
+                    <!--Honeypot-->
+                    <input type="text" name="_honey" style="display: none;">
+
+                    <!--Disable Captcha-->
+                    <input type="hidden" name="_captcha" value="false">
+
                     <span>First Name</span>
                     <br>
-                    <input type="text" id="firstName" name="First Name" required>
+                    <input type="text" id="firstName" name="First&nbsp;Name" required>
                     <br><br>
                     <span>Last Name</span>
                     <br>
-                    <input type="text" id="lastName" name="Last Name" required>
+                    <input type="text" id="lastName" name="Last&nbsp;Name" required>
                     <br><br>
                     <span>Phone Number</span>
                     <br>
                     <input type="text" placeholder="(800) 123-4567" id="phoneNum" 
-                    name="Phone Number" required>
+                    name="Phone&nbsp;Number" required>
                     <br><br>
                     <span>Email</span>
                     <br>
