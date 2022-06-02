@@ -4,6 +4,12 @@ body {
     font-family: "Roboto", "Arial", monospace;
 }
 
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .header {
     display: flex;
     justify-content: center;
@@ -24,14 +30,15 @@ body {
     align-items: center;
     gap: 100px;
     padding: 50px;
-    background-color: #1F2937;
-    color: white;
+    background-color: #e5e7eb;
+    color: #1F2937;
 }
 
 .intro .left {
     display: flex;
     flex-direction: column;
     max-width: 400px;
+    gap: 10px;
 }
 
 .hero-title {
@@ -43,15 +50,17 @@ body {
     font-size: 18px;
 }
 
-.hero-button {
-    background-color: goldenrod;
+a.hero-button {
+    background-color: #004867;
     width: 100px;
-    border-radius: 6px;
-    border: none;
     padding: 6px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
-    color: black;
+    color: #e5e7eb;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .info {
@@ -61,7 +70,8 @@ body {
     align-items: center;
     gap: 30px;
     padding: 30px;
-    color:#1F2937;
+    color:#e5e7eb;
+    background-color: #004867;
 }
 
 .title {
@@ -70,24 +80,12 @@ body {
     justify-content: center;
 }
 
-.content {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.item1, .item2, .item3, .item4 {
-    display: flex;
-    flex-direction: column;
-}
-
 .quote-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 60px;
-    background-color: #e5e7eb;
 }
 
 .quote {
@@ -108,13 +106,14 @@ body {
     justify-content: center;
     align-items: center;
     padding: 80px;
+    background-color: #e5e7eb;
 }
 
 .sign-up-box {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: goldenrod;
+    background-color: #004867;
     padding: 30px;
     border-radius: 6px;
     width: 850px;
@@ -144,29 +143,144 @@ body {
     align-items: center;
 }
 
-.sign-up-button {
+a.button {
     border-color: #e5e7eb;
     border-style: solid;
     border-radius: 6px;
     border-width: 2px;
     color: #e5e7eb;
-    background-color: goldenrod;
+    background-color: #004867;
     font-size: 18px;
     font-weight: 600;
     width: 110px;
     padding: 7px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     background-color: #1F2937;
-    color: white;
+    color: #e5e7eb;
     font-size: 15px;
+}
+
+#aboutTitle, #linkTitle, #blogTitle {
+    color: #1F2937;
+    font-size: 40px;
+}
+
+/* About */
+.aboutContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    background-color: #e5e7eb;
+    color: #1F2937;
+}
+
+
+/* Resources */
+.linkContent {
+    background-color: #e5e7eb;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #1F2937;
+}
+
+/* Contact form */
+.contactContent {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #e5e7eb;
+}
+
+#formTitle {
+    color: #e5e7eb;
+    font-size: 40px;
 }
 
 .placeholderRed {
     border-color: red;
     border-width: 2px;
     border-style: solid;
+}
+
+#firstName, #lastName, #phoneNum, #email {
+    width: 300px;
+}
+
+#message {
+    width: 500px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border-color: #1F2937;
+    border-style: solid;
+    border-radius: 6px;
+    gap: 20px;
+    width: 55%;
+    background-color: #004867;
+    color: #e5e7eb;
+}
+
+#sendBtn {
+    border-color: #e5e7eb;
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 2px;
+    color: #e5e7eb;
+    background-color: #004867;
+    font-size: 18px;
+    font-weight: 600;
+    width: 170px;
+    padding: 7px;
+}
+
+
+/* Blog */
+.blogContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 50px;
+    background-color: #e5e7eb;
+}
+
+.blogContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    gap: 20px;
+}
+
+.blog {
+    border-color: #1F2937;
+    border-width: 3px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.blogTitles {
+    color: #1F2937;
+    font-size: 20px;
 }

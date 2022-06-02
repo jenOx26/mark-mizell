@@ -8,8 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
     fields.message = document.getElementById('message');
 })
 
-
-
 function isNotEmpty(value) {
     if (value == null || typeof value == 'undefined') return false;
 
