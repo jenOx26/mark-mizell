@@ -18,26 +18,27 @@
         <div class="contactContent">
             <div class="form">
                 <h1 id="formTitle">Contact Form</h1>
-                <form action="https://formsubmit.co/jnochsner26@gmail.com" method="POST" enctype="text/plain" onsubmit="return false">
+                <form action="https://formsubmit.co/jnochsner26@gmail.com" method="POST">
                     <span>First Name</span>
                     <br>
-                    <input type="text" id="firstName" required>
+                    <input type="text" id="firstName" name="First Name" required>
                     <br><br>
                     <span>Last Name</span>
                     <br>
-                    <input type="text" id="lastName" required>
+                    <input type="text" id="lastName" name="Last Name" required>
                     <br><br>
                     <span>Phone Number</span>
                     <br>
-                    <input type="text" placeholder="(800) 123-4567" id="phoneNum" required>
+                    <input type="text" placeholder="(800) 123-4567" id="phoneNum" 
+                    name="Phone Number" required>
                     <br><br>
                     <span>Email</span>
                     <br>
-                    <input type="email" placeholder="you@mail.com" id="email" required>
+                    <input type="email" placeholder="you@mail.com" id="email" name="Email" required>
                     <br><br>
                     <span>Message</span>
                     <br>
-                    <textarea id="message" rows="8" required></textarea>
+                    <textarea id="message" rows="8" name="Message" required></textarea>
                     <br><br>
                     <button id="sendBtn" onclick="sendContact();">Send Message</button>
                 </form>
