@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import "normalize.css";
+
 body {
     display: flex;
     flex-direction: column;
-    font-family: "Roboto", "Arial", monospace;
+    font-family: 'Montserrat', "Roboto", "Arial", monospace, sans-serif;
 }
 
 a {
     color: white;
     font-weight: bold;
     text-decoration: none;
+}
+
+a:hover {
+    font-size: larger;
 }
 
 .header {
@@ -64,6 +71,12 @@ a.hero-button {
     text-decoration: none;
 }
 
+a.hero-button:hover {
+    background-color: #e5e7eb;
+    color: #004867;
+    cursor: pointer;
+}
+
 .info {
     display: flex;
     flex-direction: column;
@@ -116,7 +129,7 @@ a.hero-button {
     align-items: center;
     background-color: #004867;
     padding: 30px;
-    border-radius: 6px;
+    border-radius: 20px;
     width: 850px;
 }
 
@@ -159,6 +172,12 @@ a.button {
     text-decoration: none;
 }
 
+a.button:hover {
+    background-color: #e5e7eb;
+    color: #004867;
+    cursor: pointer;
+}
+
 .footer {
     display: flex;
     justify-content: center;
@@ -192,6 +211,14 @@ a.button {
     color: #e5e7eb;
 }
 
+img.scuba {
+   opacity: 1;
+}
+
+img.scuba:hover {
+    opacity: 0.2;
+}
+
 
 /* Resources */
 .linkContent {
@@ -202,6 +229,7 @@ a.button {
     align-items: center;
     flex-direction: column;
     color: #1F2937;
+    padding-bottom: 500px;
 }
 
 /* Contact form */
@@ -246,7 +274,7 @@ a.button {
     color: #e5e7eb;
 }
 
-#sendBtn {
+.sendBtn {
     border-color: #e5e7eb;
     border-style: solid;
     border-radius: 6px;
@@ -257,6 +285,12 @@ a.button {
     font-weight: 600;
     width: 170px;
     padding: 7px;
+}
+
+.sendBtn:hover {
+    color: #004867;
+    background-color: #e5e7eb;   
+    cursor: pointer;
 }
 
 .success {
@@ -289,7 +323,7 @@ p.success {
     gap: 20px;
     width: 100%;
     padding: 50px;
-    background-image: url("images/abstract.jpg");
+    background: linear-gradient(45deg, #1F2937, #004867, #e5e7eb);
     background-color: #e5e7eb;
 }
 
