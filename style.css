@@ -36,7 +36,7 @@ a:hover {
     align-self: center;
 }
 
-.intro {
+.hero {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,39 +47,36 @@ a:hover {
     color: #1F2937;
 }
 
-.intro .left {
+.hero .left {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 800px;
+    gap: 50px;
 }
 
 .hero-title {
-    font-size: 48px;
+    font-size: 68px;
     font-weight: bolder;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-.hero-text {
-    font-size: 22px;
+.why-choose-title {
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    margin-left: 50px;
 }
 
-a.hero-button {
-    background-color: #004867;
-    width: 100px;
-    padding: 6px;
-    font-size: 18px;
-    font-weight: 700;
-    color: #e5e7eb;
-    border: none;
-    border-radius: 6px;
-    text-align: center;
-    text-decoration: none;
-}
-
-a.hero-button:hover {
-    background-color: #e5e7eb;
-    color: #004867;
-    cursor: pointer;
+.why-choose-text {
+    font-size: 25px;
+    font-weight: bolder;
+    gap: 0px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 75px;
 }
 
 .info {
@@ -93,13 +90,14 @@ a.hero-button:hover {
     background-color: #004867;
 }
 
-.title {
-    font-size: 36px;
+.intro {
+    font-size: 20px;
     font-weight: bolder;
     justify-content: center;
+    padding: 20px;
 }
 
-.quote-section {
+.fight-section, .advocacy-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,80 +105,36 @@ a.hero-button:hover {
     padding: 60px;
 }
 
-.quote {
+.fight-title, .advocacy-title {
     font-size: 36px;
     font-style: italic;
-    width: 700px;
     color: #1F2937;
 }
 
-.author {
+.fight-text, .advocacy-text {
     font-size: 26px;
     font-weight: 600;
     color: #1F2937;
 }
 
-.sign-up-section {
+.common-injuries {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 80px;
     background-color: #e5e7eb;
+    gap: 50px;
 }
 
-.sign-up-box {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #004867;
-    padding: 30px;
-    border-radius: 20px;
-    width: 850px;
-}
-
-.sign-up-box .left {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 20px;
-}
-
-.sign-up-header {
-    color: #e5e7eb;
+.common-header {
+    color: #1F2937;
     font-size: 25px;
     font-weight: 700;
 }
 
-.sign-up-text {
-    color: #e5e7eb;
+.common-text {
+    color: #1F2937;
     font-size: 20px;
-}
-
-.sign-up-box .right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-a.button {
-    border-color: #e5e7eb;
-    border-style: solid;
-    border-radius: 6px;
-    border-width: 2px;
-    color: #e5e7eb;
-    background-color: #004867;
-    font-size: 18px;
-    font-weight: 600;
-    width: 110px;
-    padding: 7px;
-    text-align: center;
-    text-decoration: none;
-}
-
-a.button:hover {
-    background-color: #e5e7eb;
-    color: #004867;
-    cursor: pointer;
 }
 
 .footer {
@@ -284,11 +238,11 @@ img.scuba:hover {
 }
 
 #firstName, #lastName, #phoneNum, #email {
-    width: 300px;
+    width: clamp(200px, 300px, 450px);
 }
 
 #message {
-    width: 80%;
+    width: clamp(250px, 400px, 500px);
 }
 
 .form {
