@@ -20,7 +20,7 @@ a:hover {
 .header {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     padding-right: 15px;
     padding-left: 15px;
     background-color: #1F2937;
@@ -28,7 +28,12 @@ a:hover {
 }
 
 .logo {
+    margin-right: 100px;
+}
+
+.number {
     margin-right: auto;
+    align-self: center;
 }
 
 .intro {
@@ -55,7 +60,7 @@ a:hover {
 }
 
 .hero-text {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 a.hero-button {
@@ -186,18 +191,13 @@ a.button:hover {
     font-size: 10px;
 }
 
-#aboutTitle {
-    color: #e5e7eb;
-    font-size: 40px;
-} 
-
 #linkTitle, #blogTitle {
     color: #1F2937;
     font-size: 40px;
 }
 
 /* About */
-.aboutContent {
+.aboutContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -206,10 +206,27 @@ a.button:hover {
     padding-right: 400px;
     padding-bottom: 70px;
     padding-top: 70px;
-    background-image: url("images/space.jpg");
-    background-color: #1F2937;
-    color: #e5e7eb;
+    background-image: url("images/abstract.jpg");
+    background-color: #e5e7eb;
+    color: #1F2937;
 }
+
+.aboutContent {
+    border-color: #1F2937;
+    background-color: #e5e7eb;
+    border-width: 3px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#aboutTitle {
+    color: #1F2937;
+    font-size: 40px;
+    text-align: center;
+} 
 
 img.scuba {
    opacity: 1;
@@ -221,7 +238,8 @@ img.scuba:hover {
 
 
 /* Resources */
-.linkContent {
+.linkContainer {
+    background-image: url("images/abstract.jpg");
     background-color: #e5e7eb;
     padding: 50px;
     display: flex;
@@ -231,6 +249,19 @@ img.scuba:hover {
     color: #1F2937;
     padding-bottom: 500px;
 }
+
+.linkContent {
+    display: flex;
+    flex-direction: column;
+    border-color: #1F2937;
+    background-color: #e5e7eb;
+    width: 50%;
+    height: 90%;
+    border-width: 3px;
+    border-style: solid;
+    padding: 20px;
+}
+
 
 /* Contact form */
 .contactContent {
@@ -242,7 +273,7 @@ img.scuba:hover {
 }
 
 #formTitle {
-    color: #e5e7eb;
+    color: #1F2937;
     font-size: 40px;
 }
 
@@ -257,7 +288,7 @@ img.scuba:hover {
 }
 
 #message {
-    width: 500px;
+    width: 80%;
 }
 
 .form {
@@ -270,8 +301,8 @@ img.scuba:hover {
     border-radius: 6px;
     gap: 20px;
     width: 55%;
-    background-color: #004867;
-    color: #e5e7eb;
+    background-color: #e5e7eb;
+    color: #1F2937;
 }
 
 .sendBtn {
@@ -289,7 +320,9 @@ img.scuba:hover {
 
 .sendBtn:hover {
     color: #004867;
-    background-color: #e5e7eb;   
+    background-color: #e5e7eb; 
+    border: solid #004867;
+    border-radius: 6px;  
     cursor: pointer;
 }
 
@@ -323,7 +356,7 @@ p.success {
     gap: 20px;
     width: 100%;
     padding: 50px;
-    background: linear-gradient(45deg, #1F2937, #004867, #e5e7eb);
+    background-image: url("images/abstract.jpg");
     background-color: #e5e7eb;
 }
 
@@ -331,7 +364,7 @@ p.success {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 600px;
+    width: 100%;
     gap: 20px;
 }
 
@@ -343,6 +376,7 @@ p.success {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    width: 60%;
 }
 
 .blogTitles {
