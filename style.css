@@ -238,7 +238,7 @@ img.scuba:hover {
 }
 
 #firstName, #lastName, #phoneNum, #email {
-    width: clamp(200px, 300px, 450px);
+    width: clamp(200px, 350px, 450px);
 }
 
 #message {
@@ -308,7 +308,6 @@ p.success {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: 100%;
     padding: 50px;
     background-image: url("images/abstract.jpg");
     background-color: #e5e7eb;
@@ -318,7 +317,6 @@ p.success {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     gap: 20px;
 }
 
@@ -330,7 +328,6 @@ p.success {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    width: 60%;
 }
 
 .blogTitles {
